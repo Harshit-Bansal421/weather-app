@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyView Real-Time Weather</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="meteorology.ico">
+</head>
+
+<body>
+  <nav>
+    <div class="title">
+      <img src="assets/meteorology.png" alt="pic">
+      <div class="title-desc">
+        <span>SkyView</span>
+        <span>Real-Time Weather</span>
+      </div>
+    </div>
+    <div class="search-city">
+      <input id="city-search" type="text" placeholder="Search city..." class="search-input" />
+      <button class="location-btn">
+        <img src="assets/icons/location-dark.png" alt="pic">
+      </button>
+    </div>
+  </nav>
+  <div class="main-entry">
+    <div class="main-data">
+      <span class="current-location">
+      </span>
+      <span class="current-date">
+      </span>
+      <span class="current-temp"></span>
+      <span class="current-weather"></span>
+      <span class="current-feels-like"></span>
+    </div>
+    <div class="current-weather-image">
+    </div>
+  </div>
+  <div class="main-analysis">
+    <div>
+      <span><img class="humidity" src="assets/icons/humidity_low.png" alt="pic"></span>
+      <span>Humidity</span>
+      <span class="current-humidity"></span>
+    </div>
+    <div>
+      <span><img src="assets/icons/windspeed.png" alt="pic"></span>
+      <span>Wind Speed</span>
+      <span class="current-windspeed"></span>
+    </div>
+    <div>
+      <span><img src="assets/icons/visibility.png" alt="pic"></span>
+      <span>Visibility</span>
+      <span class="current-visibility"></span>
+    </div>
+    <div>
+      <span><img src="assets/icons/pressure.png" alt="pic"></span>
+      <span>Pressure</span>
+      <span class="current-Pressure"></span>
+    </div>
+  </div>
+  <div class="sun-condn">
+    <div class="sunrise">
+      <img src="assets/icons/sunrise.png" alt="pic">
+      <div class="knowledge-suncondn">
+        <span>Sunrise</span>
+        <span class="sunrise-knowledge"></span>
+      </div>
+    </div>
+    <div class="sunset">
+      <img src="assets/icons/sunsets.png" alt="pic">
+      <div class="knowledge-suncondn">
+        <span>Sunset</span>
+        <span class="sunset-knowledge"></span>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="logic.js"></script>
+
+</html>
